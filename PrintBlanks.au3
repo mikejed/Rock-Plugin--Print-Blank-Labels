@@ -1,6 +1,6 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_icon=../PrintBlanks.ico
-#AutoIt3Wrapper_Res_Fileversion=2.1
+#AutoIt3Wrapper_Res_Fileversion=2.2
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=p
 #AutoIt3Wrapper_Res_LegalCopyright=Copyright 2018 by Michael Garrison
 #AutoIt3Wrapper_Res_Language=1033
@@ -215,7 +215,7 @@ Exit
 
 #Region UDFs
 Func RandAlphaNum()
-	Local $rand = Random(48,83)
+	Local $rand = Round(Random(48,83))
 	If $rand > 57 Then $rand = $rand + 7
 	Return Chr($rand)
 EndFunc
